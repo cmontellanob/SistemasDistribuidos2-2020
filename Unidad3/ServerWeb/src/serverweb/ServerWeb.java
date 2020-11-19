@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sumatcp;
+package serverweb;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -16,10 +16,10 @@ import java.net.Socket;
  *
  * @author Carlos
  */
-public class ServidorSuma {
+public class ServerWeb {
 
     public static void main(String[] args) {
-        int port = 5001; 
+        int port = 80; 
     while (true)
     {        
         try {
@@ -30,8 +30,14 @@ public class ServidorSuma {
             client = server.accept(); 
             BufferedReader fromClient = new BufferedReader(new InputStreamReader(client.getInputStream())); // el lector
             System.out.println("Cliente se conecto");
-            System.out.println(fromClient.readLine());
-            toClient = new PrintStream(client.getOutputStream()); 
+            
+            String mensajeServidor="";
+             while((mensajeServidor = fromClient.readLine()) != null) //Mientras haya mensajes desde el cliente
+            {
+                //Se muestra por pantalla el mensaje recibido
+                System.out.println(mensajeServidor);
+                }
+                        toClient = new PrintStream(client.getOutputStream()); 
             toClient.println("Respuesta");
             System.out.println("Cliente se conecto");
         } catch (IOException e) {
