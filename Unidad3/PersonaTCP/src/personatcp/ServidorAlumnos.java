@@ -10,6 +10,7 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.ObjectInputStream;
 import java.io.PrintStream;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -20,30 +21,30 @@ import java.net.Socket;
  */
 public class ServidorAlumnos {
 
-    public static void main(String[] args) {
-        int port = 5001; 
-        Operacion o;
-    while (true)
-    {        
+    public static void main(String[] args) throws ClassNotFoundException {
+        int port = 5001;
         try {
-            ServerSocket server = new ServerSocket(port);
-            System.out.println("Se inicio el servidor");
-            Socket client;
-            PrintStream toClient;       
-            client = server.accept(); 
-            //BufferedReader fromClient = new BufferedReader(new InputStreamReader(client.getInputStream())); // el lector
-            DataInputStream  fromClient  = new DataInputStream(client.getInputStream());
-            System.out.println("Cliente se conecto");
-            String mensajeServidor=fromClient.toString();
-                System.out.println(mensajeServidor);
-            // System.out.println(fromClient.readLine());
-            toClient = new PrintStream(client.getOutputStream()); 
-            toClient.println("Respuesta");
-            System.out.println("Cliente se conecto");
+            while (true) {
+
+                ServerSocket server = new ServerSocket(port);
+                System.out.println("Se inicio el servidor");
+                Socket client;
+                PrintStream toClient;
+                client = server.accept();
+                ObjectInputStream fromClient = new ObjectInputStream(client.getInputStream());
+                System.out.println("Cliente se conecto");
+                Operacion o = (Operacion) fromClient.readObject(); //cast :  convertir
+                              {
+                System.out.println(o.alumno.getApellido());
+                }
+                    System.out.println(o.alumno.getNombre());
+                toClient = new PrintStream(client.getOutputStream());
+                toClient.println("Respuesta");
+                System.out.println("Cliente se conecto");
+
+            }
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
-
-    }
     }
 }

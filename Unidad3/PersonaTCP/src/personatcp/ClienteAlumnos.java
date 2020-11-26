@@ -12,12 +12,11 @@ public class ClienteAlumnos {
             Alumno a=new Alumno("Juan", "Perez", "110-25");
             Operacion o=new Operacion(a,Operacion.Accion.Crear);
             
-            
             Socket client = new Socket("localhost", port); //conectarse al socket
-            DataOutputStream toServer = new DataOutputStream(client.getOutputStream());
+            ObjectOutputStream toServer = new ObjectOutputStream(client.getOutputStream());
             BufferedReader fromServer = new BufferedReader(new InputStreamReader(client.getInputStream()));
             
-            toServer.writeBytes(o.toString());  //mandar alservidor 
+            toServer.writeObject(o);  //mandar alservidor 
             String result = fromServer.readLine();  // devolver del servidor
             System.out.println("cadena devuelta es: "+result);
             

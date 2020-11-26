@@ -19,31 +19,31 @@ import java.net.Socket;
 public class ServerWeb {
 
     public static void main(String[] args) {
-        int port = 80; 
-    while (true)
-    {        
+        int port = 80;
         try {
-            ServerSocket server = new ServerSocket(port);
-            System.out.println("Se inicio el servidor");
-            Socket client;
-            PrintStream toClient;       
-            client = server.accept(); 
-            BufferedReader fromClient = new BufferedReader(new InputStreamReader(client.getInputStream())); // el lector
-            System.out.println("Cliente se conecto");
-            
-            String mensajeServidor="";
-             while((mensajeServidor = fromClient.readLine()) != null) //Mientras haya mensajes desde el cliente
-            {
-                //Se muestra por pantalla el mensaje recibido
-                System.out.println(mensajeServidor);
+            while (true) {
+
+                ServerSocket server = new ServerSocket(port);
+                System.out.println("Se inicio el servidor");
+                Socket client;
+                PrintStream toClient;
+                client = server.accept();
+                BufferedReader fromClient = new BufferedReader(new InputStreamReader(client.getInputStream())); // el lector
+                System.out.println("Cliente se conecto");
+
+                String mensajeServidor = "";
+                while ((mensajeServidor = fromClient.readLine()) != null) //Mientras haya mensajes desde el cliente
+                {
+                    //Se muestra por pantalla el mensaje recibido
+                    System.out.println(mensajeServidor);
                 }
-                        toClient = new PrintStream(client.getOutputStream()); 
-            toClient.println("Respuesta");
-            System.out.println("Cliente se conecto");
+                toClient = new PrintStream(client.getOutputStream());
+                toClient.println("Respuesta");
+                System.out.println("Cliente se conecto");
+
+            }
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
-
-    }
     }
 }
