@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://Servicio/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="wsAritmeticaJava" targetNamespace="http://Servicio/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:62153/SumaJava/wsAritmeticaJava?xsd=1" namespace="http://Servicio/" />
+    </xsd:schema>
+  </types>
+  <message name="sumar">
+    <part name="parameters" element="tns:sumar" />
+  </message>
+  <message name="sumarResponse">
+    <part name="parameters" element="tns:sumarResponse" />
+  </message>
+  <portType name="wsAritmeticaJava">
+    <operation name="sumar">
+      <input wsam:Action="http://Servicio/wsAritmeticaJava/sumarRequest" message="tns:sumar" />
+      <output wsam:Action="http://Servicio/wsAritmeticaJava/sumarResponse" message="tns:sumarResponse" />
+    </operation>
+  </portType>
+  <binding name="wsAritmeticaJavaPortBinding" type="tns:wsAritmeticaJava">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="sumar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="wsAritmeticaJava">
+    <port name="wsAritmeticaJavaPort" binding="tns:wsAritmeticaJavaPortBinding">
+      <soap:address location="http://localhost:62153/SumaJava/wsAritmeticaJava" />
+    </port>
+  </service>
+</definitions>

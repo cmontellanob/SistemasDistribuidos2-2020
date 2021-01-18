@@ -1,0 +1,10 @@
+D:\usfx\SIS-258 Sistemas Distribuidos\2-2020\SistemasDistribuidos2-2020\Unidad7\ClienteSuma\ClienteSuma\bin\Debug\ClienteSuma.exe.config
+D:\usfx\SIS-258 Sistemas Distribuidos\2-2020\SistemasDistribuidos2-2020\Unidad7\ClienteSuma\ClienteSuma\bin\Debug\ClienteSuma.exe
+D:\usfx\SIS-258 Sistemas Distribuidos\2-2020\SistemasDistribuidos2-2020\Unidad7\ClienteSuma\ClienteSuma\bin\Debug\ClienteSuma.pdb
+D:\usfx\SIS-258 Sistemas Distribuidos\2-2020\SistemasDistribuidos2-2020\Unidad7\ClienteSuma\ClienteSuma\obj\Debug\ClienteSuma.csprojAssemblyReference.cache
+D:\usfx\SIS-258 Sistemas Distribuidos\2-2020\SistemasDistribuidos2-2020\Unidad7\ClienteSuma\ClienteSuma\obj\Debug\ClienteSuma.frmSuma.resources
+D:\usfx\SIS-258 Sistemas Distribuidos\2-2020\SistemasDistribuidos2-2020\Unidad7\ClienteSuma\ClienteSuma\obj\Debug\ClienteSuma.Properties.Resources.resources
+D:\usfx\SIS-258 Sistemas Distribuidos\2-2020\SistemasDistribuidos2-2020\Unidad7\ClienteSuma\ClienteSuma\obj\Debug\ClienteSuma.csproj.GenerateResource.cache
+D:\usfx\SIS-258 Sistemas Distribuidos\2-2020\SistemasDistribuidos2-2020\Unidad7\ClienteSuma\ClienteSuma\obj\Debug\ClienteSuma.csproj.CoreCompileInputs.cache
+D:\usfx\SIS-258 Sistemas Distribuidos\2-2020\SistemasDistribuidos2-2020\Unidad7\ClienteSuma\ClienteSuma\obj\Debug\ClienteSuma.exe
+D:\usfx\SIS-258 Sistemas Distribuidos\2-2020\SistemasDistribuidos2-2020\Unidad7\ClienteSuma\ClienteSuma\obj\Debug\ClienteSuma.pdb

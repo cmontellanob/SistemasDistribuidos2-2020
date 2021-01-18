@@ -1,0 +1,7 @@
+D:\usfx\SIS-258 Sistemas Distribuidos\2-2020\SistemasDistribuidos2-2020\Unidad7\ClienteSumaCSharp\ClienteSumaCSharp\bin\Debug\ClienteSumaCSharp.exe.config
+D:\usfx\SIS-258 Sistemas Distribuidos\2-2020\SistemasDistribuidos2-2020\Unidad7\ClienteSumaCSharp\ClienteSumaCSharp\bin\Debug\ClienteSumaCSharp.exe
+D:\usfx\SIS-258 Sistemas Distribuidos\2-2020\SistemasDistribuidos2-2020\Unidad7\ClienteSumaCSharp\ClienteSumaCSharp\bin\Debug\ClienteSumaCSharp.pdb
+D:\usfx\SIS-258 Sistemas Distribuidos\2-2020\SistemasDistribuidos2-2020\Unidad7\ClienteSumaCSharp\ClienteSumaCSharp\obj\Debug\ClienteSumaCSharp.csprojAssemblyReference.cache
+D:\usfx\SIS-258 Sistemas Distribuidos\2-2020\SistemasDistribuidos2-2020\Unidad7\ClienteSumaCSharp\ClienteSumaCSharp\obj\Debug\ClienteSumaCSharp.csproj.CoreCompileInputs.cache
+D:\usfx\SIS-258 Sistemas Distribuidos\2-2020\SistemasDistribuidos2-2020\Unidad7\ClienteSumaCSharp\ClienteSumaCSharp\obj\Debug\ClienteSumaCSharp.exe
+D:\usfx\SIS-258 Sistemas Distribuidos\2-2020\SistemasDistribuidos2-2020\Unidad7\ClienteSumaCSharp\ClienteSumaCSharp\obj\Debug\ClienteSumaCSharp.pdb
